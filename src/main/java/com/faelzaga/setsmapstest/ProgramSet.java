@@ -73,6 +73,12 @@ public class ProgramSet {
             System.out.println(element);
         }
         System.out.println("-------------------------------------------");
+
+        for (String element : fruits) {
+            fruits.remove(element);
+        }
+        System.out.println(fruits.size());
+
     }
 
     public static boolean isEmpty(Set list) {
@@ -105,7 +111,6 @@ public class ProgramSet {
                     newList.add(element);
                 }
             }
-
         }
         return newList;
     }
