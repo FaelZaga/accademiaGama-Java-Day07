@@ -9,17 +9,23 @@ public class PerformanceHashSet {
         Set<Integer> numbers = new HashSet<>();
 
         System.out.println("Starting now...");
-        long start = System.currentTimeMillis();
+        long startC = System.currentTimeMillis();
 
-        for (int i = 0; i < 30000; i++) {
+        for (int i = 0; i < 1000000; i++) {
             numbers.add(i);
         }
+
+        long endC = System.currentTimeMillis();
+
+        System.out.println("Starting now...");
+        long startR = System.currentTimeMillis();
 
         for (Integer number : numbers) {
                 System.out.println(number);
         }
 
-        long end = System.currentTimeMillis();
-        System.out.println("Time spent: " + (end - start));
+        long endR = System.currentTimeMillis();
+        System.out.println("Time spent creating: " + (endC - startC));
+        System.out.println("Time spent reading: " + (endR - startR));
     }
 }
