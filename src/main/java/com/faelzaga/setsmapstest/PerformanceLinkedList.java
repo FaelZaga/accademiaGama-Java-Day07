@@ -1,12 +1,12 @@
 package main.java.com.faelzaga.setsmapstest;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class PerformanceArrayList {
+public class PerformanceLinkedList {
 
     public static void main(String[] args) {
-        List<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new LinkedList<>();
 
         System.out.println("Starting now...");
         long startC = System.currentTimeMillis();
