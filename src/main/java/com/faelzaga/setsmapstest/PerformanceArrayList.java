@@ -1,12 +1,12 @@
 package main.java.com.faelzaga.setsmapstest;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 public class PerformanceArrayList {
 
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
+        Collection<Integer> numbers = new ArrayList<>();
 
         System.out.println("Starting now...");
         long startC = System.currentTimeMillis();
@@ -20,8 +20,8 @@ public class PerformanceArrayList {
         System.out.println("Starting now...");
         long startR = System.currentTimeMillis();
 
-        for (int i=0; i < numbers.size(); i++) {
-            System.out.println(numbers.get(i));
+        for (Integer number : numbers) {
+            System.out.println(number);
         }
 
         long endR = System.currentTimeMillis();
