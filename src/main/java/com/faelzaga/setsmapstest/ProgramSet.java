@@ -74,10 +74,7 @@ public class ProgramSet {
         }
         System.out.println("-------------------------------------------");
 
-        for (String element : fruits) {
-            fruits.remove(element);
-        }
-        System.out.println(fruits.size());
+        TreeSet<String> treeSet = new TreeSet<>(fruits); // CONVERT HASHSET TO TREESET
 
     }
 

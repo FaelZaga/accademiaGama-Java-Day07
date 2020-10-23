@@ -1,6 +1,7 @@
 package main.java.com.faelzaga.setsmapstest;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PerformanceArrayList {
@@ -35,5 +36,14 @@ public class PerformanceArrayList {
         long endAdd = System.currentTimeMillis();
 
         System.out.println("Time spent adding in the first position: " + (endAdd - startAdd));
+
+        List<Integer> reversedNumbers = new ArrayList(numbers);
+
+        Collections.reverse(reversedNumbers); // REVERSE ORDER ARRAYLIST
+
+        for (Integer number : reversedNumbers) {
+            System.out.println(number);
+        }
+
     }
 }
